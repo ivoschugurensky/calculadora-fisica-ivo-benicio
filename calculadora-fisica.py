@@ -8,7 +8,6 @@ for i in range(0,repeticion):
     if repeticion == 1:
       singrafico = input("¿Seguro que quiere repetirlo una vez? Si es así no va a haber gráfico (si/no):")
       if singrafico == "no":
-        print("Se tiene que repetir más de 1 vez para tener gráfico")
         break
     elif repeticion < 1:
       print("No se puede repetir menos de una vez")
