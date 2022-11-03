@@ -5,6 +5,9 @@ lista=[]
 x=[]
 y=[]
 for i in range(0,repeticion):
+    if repeticion <= 1:
+      print("Se tiene que repetir más de 1 vez")
+      break
     def variables():
         vel= float(input("ingrese la velocidad en m/s: "))
         while vel<0:
@@ -45,12 +48,14 @@ for i in range(0,repeticion):
         y.append(tie)
         x.append(dist)
     variables()
-print("Los resultados fueron",lista)
-width=0.1
-plt.bar(y,x, width=width, color="red")
-plt.scatter(y,x, color="blue")
-plt.plot(y,x, color="green")
-plt.ylabel("Distancia")
-plt.xlabel("Tiempo")
-plt.title("Distancia sobre tiempo")
-plt.show()
+
+if repeticion > 1:
+  print("Los resultados fueron",lista)
+  width=0.1
+  plt.bar(y,x, width=width, color="brown")
+  plt.scatter(y,x, color="grey")
+  plt.plot(y,x, color="black")
+  plt.ylabel("Distancia")
+  plt.xlabel("Tiempo")
+  plt.title("Distancia sobre tiempo")
+  plt.show()
