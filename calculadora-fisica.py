@@ -8,7 +8,7 @@ lista=[]
 x=[]
 y=[]
 x2=[]
-for i in range(0,repeticion):
+for i in range(repeticion):
     if repeticion == 1:
       singrafico = input("¿Seguro que quiere repetirlo una vez? Si es así no va a haber gráfico (si/no):")
       if singrafico == "no":
